@@ -29,3 +29,5 @@ Open `index.html` in a browser.
 ## GitHub Pages
 
 This repo is a static site and can deploy directly to GitHub Pages.
+
+Live page: `https://dacameragirl.github.io/Jaxons-Numbers-Games/`
