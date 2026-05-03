@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">Number cube</title>
+  <desc id="desc">A blue blocky cube with bright numbers.</desc>
+  <defs>
+    <linearGradient id="top" x1="18" x2="98" y1="14" y2="52" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#b8ecff"/>
+      <stop offset="1" stop-color="#63c7ff"/>
+    </linearGradient>
+    <linearGradient id="side" x1="84" x2="112" y1="44" y2="103" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2aa8ff"/>
+      <stop offset="1" stop-color="#1167b1"/>
+    </linearGradient>
+    <linearGradient id="front" x1="22" x2="83" y1="49" y2="112" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6dccff"/>
+      <stop offset="1" stop-color="#2aa8ff"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#top)" stroke="#0d5c9d" stroke-width="5" d="M20 39 64 15l44 24-44 25z"/>
+  <path fill="url(#front)" stroke="#0d5c9d" stroke-width="5" d="M20 39v51l44 24V64z"/>
+  <path fill="url(#side)" stroke="#0d5c9d" stroke-width="5" d="M108 39v51l-44 24V64z"/>
+  <text x="42" y="87" fill="#fff" font-family="Trebuchet MS, sans-serif" font-size="38" font-weight="900">8</text>
+  <text x="75" y="85" fill="#ffd84d" font-family="Trebuchet MS, sans-serif" font-size="26" font-weight="900">3</text>
+  <text x="53" y="47" fill="#ff5bbd" font-family="Trebuchet MS, sans-serif" font-size="26" font-weight="900">7</text>
+</svg>

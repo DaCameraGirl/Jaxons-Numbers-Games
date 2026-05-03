@@ -1,0 +1,18 @@
+{
+  "name": "Jaxon's Numbers Game",
+  "short_name": "Jaxon's Numbers",
+  "description": "A blue blocky calculator and number game playground with speech, QR access, and floating numbers.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#dff5ff",
+  "theme_color": "#2aa8ff",
+  "icons": [
+    {
+      "src": "assets/number-cube.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

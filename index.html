@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#2aa8ff" />
+  <title>Jaxon's Numbers Game | Numbers R' Everywhere</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="numberSky" aria-hidden="true"></canvas>
+  <div class="cursor-cloud" id="cursorCloud" aria-hidden="true"></div>
+
+  <header class="hero">
+    <div class="hero-copy">
+      <img class="logo" src="assets/number-cube.svg" alt="" />
+      <p class="eyebrow">blue blocky number playground</p>
+      <h1 class="breathing-title">JAXON'S NUMBERS GAME</h1>
+      <p class="nameplate">Numbers R' Everywhere</p>
+      <p class="tagline">A sparkly, floating-number calculator and number arcade with patterns, speed rounds, memory, logic, and cursor-follow number magic.</p>
+    </div>
+    <div class="hero-tools">
+      <div class="score-card" aria-live="polite">
+        <span>Stars</span>
+        <strong id="stars">0</strong>
+        <button id="resetStars" type="button">Reset</button>
+      </div>
+      <div class="qr-card">
+        <span>Scan for iPhone or tablet</span>
+        <img id="qrCode" alt="QR code for Numbers R' Everywhere" />
+        <a id="siteLink" href="https://dacameragirl.github.io/Numbers-R-Everywhere/">Open page</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="panel calculator-panel" aria-labelledby="calculatorTitle">
+      <div class="panel-title-row">
+        <h2 id="calculatorTitle">Number Lab Calculator</h2>
+        <button id="talkToggle" class="talk-toggle" type="button" aria-pressed="true">Talk: On</button>
+      </div>
+      <p class="helper-text">Click buttons or type numbers on the keyboard. The app can say the numbers out loud.</p>
+      <output id="calcDisplay" class="calc-display">0</output>
+      <div class="calc-actions">
+        <button id="sayDisplay" type="button">Say Display</button>
+        <button id="backspaceCalc" type="button">Backspace</button>
+      </div>
+      <div class="calc-grid">
+        <button data-calc="7">7</button>
+        <button data-calc="8">8</button>
+        <button data-calc="9">9</button>
+        <button data-calc="+">+</button>
+        <button data-calc="4">4</button>
+        <button data-calc="5">5</button>
+        <button data-calc="6">6</button>
+        <button data-calc="-">-</button>
+        <button data-calc="1">1</button>
+        <button data-calc="2">2</button>
+        <button data-calc="3">3</button>
+        <button data-calc="*">x</button>
+        <button data-calc="0">0</button>
+        <button data-calc="clear">Clear</button>
+        <button data-calc="=">=</button>
+        <button data-calc="/">&divide;</button>
+      </div>
+    </section>
+
+    <section class="panel games-panel" aria-labelledby="gamesTitle">
+      <div class="games-head">
+        <h2 id="gamesTitle">7 Number Games</h2>
+        <button id="newRound" type="button">New Round</button>
+      </div>
+
+      <nav class="game-tabs" aria-label="Choose a number game">
+        <button class="active" data-game="pop">Prime Pop</button>
+        <button data-game="count">Block Arrays</button>
+        <button data-game="bigger">Number Duel</button>
+        <button data-game="missing">Pattern Finder</button>
+        <button data-game="sum">Target Builder</button>
+        <button data-game="speed">Speed Add</button>
+        <button data-game="memory">Memory Match</button>
+      </nav>
+
+      <article class="game-stage" id="gameStage" aria-live="polite"></article>
+      <p class="feedback" id="feedback">Pick a game and play.</p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
