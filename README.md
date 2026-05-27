@@ -1,4 +1,4 @@
-# Jaxon's Numbers Game
+# Jaxon's Numbers Game 
 
 Display name: **Numbers R' Everywhere**
 
